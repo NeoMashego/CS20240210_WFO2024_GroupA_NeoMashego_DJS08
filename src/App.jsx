@@ -14,10 +14,19 @@
  * linked in the slides.
  */
 
+import { BrowserRoouter, Routes, Route, Link } from "react-router-dom"
+import Home from "./pages/Home.jsx"
+import About from "./pages/About.jsx"
+
 function App() {
 
   return (
-    <h1>Start here</h1>
+    <BrowserRoouter>
+      <Routes>
+          <Route path="/" element={<Home />}/>
+          <Route path="/about" element={<About />}/>
+      </Routes>
+    </BrowserRoouter>
   )
 }
 
