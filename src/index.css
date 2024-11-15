@@ -234,51 +234,60 @@ footer {
   border-radius: 5px;
 }
 
+.van-tile h4{
+  color: #4d4d4d;
+}
+
+.van-tile p {
+  color: #161616;
+}
+
 .van-list-container button {
   margin-right: 20px;
   cursor: pointer;
 }
 
-.van-type {
+.van-capacity {
   height: 34px;
   padding: 6px 26px;
   font-style: normal;
   font-weight: 500;
   border: none;
   border-radius: 5px;
-  background-color: #ffead0;
-  color: #4d4d4d;
+  background-color: #115e59;
+  color: #fff7ed;
   transition: 200ms all cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.van-type:hover {
-  color: #ffead0;
+.van-capacity:hover {
+  color: #115e59;
 }
 
-.van-type:focus {
+.van-capacity:focus {
   outline: none;
 }
 
-.van-type.selected {
-  color: #ffead0;
+.van-capacity.selected {
+  font-weight: bold;
+  color: #fff7ed;
 }
 
-.van-type.simple:hover,
-.van-type.simple.selected {
+.van-capacity.simple:hover,
+.van-capacity.simple.selected {
   background-color: #e17654;
 }
 
-.van-type.rugged:hover,
-.van-type.rugged.selected {
+.van-capacity.rugged:hover,
+.van-capacity.rugged.selected {
   background-color: #115e59;
 }
 
-.van-type.luxury:hover,
-.van-type.luxury.selected {
+.van-capacity.luxury:hover,
+.van-capacity.luxury.selected {
   background-color: #161616;
 }
 
-.van-type.clear-filters {
+.van-capacity.clear-filters {
   margin-left: -20px;
   height: 34px;
   padding: 6px 26px;
@@ -291,7 +300,7 @@ footer {
   color: #4d4d4d;
 }
 
-i[class*="van-type-"] {
+i[class*="van-capacity-"] {
   padding: 7px 14px;
 }
 
