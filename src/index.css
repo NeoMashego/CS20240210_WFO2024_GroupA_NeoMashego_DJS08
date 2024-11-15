@@ -374,6 +374,7 @@ i[class*="van-capacity-"] {
 }
 
 .van-detail-container .back-button:visited {
+  text-decoration: double;
 }
 
 .van-detail-container .back-button span {
