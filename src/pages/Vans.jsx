@@ -2,30 +2,31 @@ import React, {useState} from "react"
 import { Link } from "react-router-dom"
 import Vanny from "../images/van.jpg"
 
+const van = [
+    {
+        id: 1,
+        color: "purple",
+        type: "Minivan",
+        registration: new Date('2017-01-03'),
+        capacity: 7
+    },
+    {
+        id: 2,
+        color: "red",
+        type: "Station wagon",
+        registration: new Date('2018-03-03'),
+        capacity: 5
+    },
+    {
+        id: 3,
+        color: "blue",
+        type: "Sedan",
+        registration: new Date('2019-05-03'),
+        capacity: 5
+    }
+]
+
 function Vans(){
-    const [van, setVans] = React.useState([
-        {
-            id: 1,
-            color: "purple",
-            type: "Minivan",
-            registration: new Date('2017-01-03'),
-            capacity: 7
-        },
-        {
-            id: 2,
-            color: "red",
-            type: "Station wagon",
-            registration: new Date('2018-03-03'),
-            capacity: 5
-        },
-        {
-            id: 3,
-            color: "blue",
-            type: "Sedan",
-            registration: new Date('2019-05-03'),
-            capacity: 5
-        }
-    ])
 
     const vanElements = van.map(v => (
         <div className="van-tile" key={v.id}>
