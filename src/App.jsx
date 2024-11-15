@@ -14,7 +14,7 @@
  * linked in the slides.
  */
 
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
+import { BrowserRouter, Routes, Route, Link, NavLink } from "react-router-dom"
 import Home from "./pages/Home.jsx"
 import About from "./pages/About.jsx"
 import Vans from "./pages/Vans.jsx"
@@ -27,8 +27,8 @@ function App() {
       <header>
           <Link to="/home">#VANLIFE</Link>
         <nav>
-          <Link to="/about">About</Link>
-          <Link to="/vans">Vans</Link>
+          <NavLink to="/about" className={({isActive}) => isActive ? "active-link" : null}> About </NavLink>
+          <NavLink to="/vans" className={({isActive}) => isActive ? "active-link" : null}> Vans </NavLink>
         </nav>
       </header>
       <Routes>

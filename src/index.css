@@ -71,6 +71,13 @@ nav {
   display: flex;
 }
 
+a.active-link {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #115e59;
+}
+
+
 main {
   margin-bottom: 84px;
 }
