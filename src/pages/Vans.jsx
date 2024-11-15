@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React from "react"
 import { Link, useSearchParams } from "react-router-dom"
 import Vanny from "../images/van.jpg"
 
