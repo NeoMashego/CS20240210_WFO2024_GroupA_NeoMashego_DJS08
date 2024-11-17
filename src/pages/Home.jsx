@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 
 function Home(){
+        //renders home page of Van Life upon searching page with link to Vans page
     return(
         <div className="home-container">
             <h1>You got the travel plans, we got the travel vans.</h1>

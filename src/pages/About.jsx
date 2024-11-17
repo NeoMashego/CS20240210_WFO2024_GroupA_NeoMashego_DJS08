@@ -2,6 +2,7 @@ import bgImg from "../images/about-hero.png"
 import { Link } from "react-router-dom"
 
 function About(){
+        //renders basic about Vans Life content with Link to Vans
     return(
         <div className="about-page-container">
             <img src={bgImg} className="about-hero-image" />

@@ -55,12 +55,14 @@ const van = [
 ]
 
 function Vans(){
+        //search parameters
     const [searchParams, setSearchParams] = useSearchParams()
 
     const typeFilter = searchParams.get("type")
 
     const displayedVans = typeFilter ? van.filter(v => v.type === typeFilter) : van
 
+        //Van-tile structure set up
     const vanElements = displayedVans.map(v => (
         <div className="van-tile" key={v.id}>
             <img src={Vanny} />
@@ -74,6 +76,7 @@ function Vans(){
         </div>
     ))
 
+        //returns filter buttons to envoke searchParams functionality and van-tiles
     return (
         <div className="van-list-container">
             <h1>Explore our van options</h1>

@@ -25,14 +25,14 @@ function App() {
   return (
     <BrowserRouter>
       <header>
-          <Link to="/home">#VANLIFE</Link>
+          <Link to="/">#VANLIFE</Link>
         <nav>
           <NavLink to="/about" className={({isActive}) => isActive ? "active-link" : null}> About </NavLink>
           <NavLink to="/vans" className={({isActive}) => isActive ? "active-link" : null}> Vans </NavLink>
         </nav>
       </header>
       <Routes>
-          <Route path="/home" element={<Home />}/>
+          <Route path="/" element={<Home />}/>
           <Route path="/about" element={<About />}/>
           <Route path="/vans" element={<Vans />} />
           <Route path="/vans/:id" element={<VanDetails />} />
